@@ -6,10 +6,71 @@
 </head>
 
 <body>
-    <h1>Form 태그 실습</h1>
+    <h1>회원가입 폼</h1>
 
-    <p>앞서 학습한 폼 관련 태그를 이용하여 가입 폼을 작성해 봅시다.</p>
-    <p>비즈니스를 운영한다는 생각으로 서비스를 구상해 보고, 해당 비즈니스 모델에 적합한 입력 항목을 선정, 가입 폼을 작성해 봅니다.</p>
+    <form name="registerForm"
+    action="#"
+    method="post"> 
+    <fieldset>
+        <legend>회원정보</legend>
+
+        <label for="username">이름</label>
+        <input type="text"
+            id="username"
+            name="username"
+            placeholder="이름을 입력하세요"
+            required />
+
+        <label for="id">아이디</label>
+        <input type="text"
+            id="id"
+            name="id"
+            placeholder="아이디를 입력하세요"
+            required />
+
+        <label for="password">비밀번호</label>
+        <input type="text"
+            id="password"
+            name="password"
+            placeholder="비밀번호를 입력하세요"
+            required /><br />
+
+        <label>성별</label>
+        
+        <input type="radio"
+            id="female"
+            name="sex"
+            value="f" />
+        <label for="female">여성</label>
+
+        <input type="radio"
+            id="male"
+            name="sex"
+            value="m" />
+        <label for="main">남성</label><br />
+
+        <label>선호 메뉴</label>
+
+        <input type="radio"
+            id="black-bean-sauce noodles"
+            name="menu"
+            value="b" />
+        <label for="black-bean-sauce noodles">자장면</label>
+
+        <input type="radio"
+            id="spicy seafood noodles"
+            name="menu"
+            value="b" />
+        <label for="spicy seafood noodles">잠봉</label>
+
+
+        
+
+
+        
+    </fieldset>
+
+
 
 </body>
 
